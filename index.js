@@ -21,5 +21,11 @@ module.exports = {
       destDir: 'ember-rollbar-client',
       files: ['rollbar.named-amd.js']
     });
+  },
+
+  includedCommands: function() {
+    return {
+      'notify-rollbar-sourcemaps': require('./lib/commands/notify-rollbar-sourcemaps')
+    };
   }
 };
