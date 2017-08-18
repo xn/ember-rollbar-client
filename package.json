@@ -23,7 +23,7 @@
   "dependencies": {
     "broccoli-funnel": "1.2.0",
     "ember-cli-babel": "6.6.0",
-    "rollbar": "~2.1.0"
+    "rollbar": "~2.2.0"
   },
   "devDependencies": {
     "bootstrap-sass": "3.3.7",
