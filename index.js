@@ -10,7 +10,8 @@ module.exports = {
 
   includedCommands: function() {
     return {
-      'notify-rollbar-sourcemaps': require('./lib/commands/notify-rollbar-sourcemaps')
+      'notify-rollbar-sourcemaps': require('./lib/commands/notify-rollbar-sourcemaps'),
+      'upload-rollbar-sourcemaps': require('./lib/commands/upload-rollbar-sourcemaps')
     };
   }
 };
