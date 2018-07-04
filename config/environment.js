@@ -1,8 +1,10 @@
 'use strict';
 
 function codeVersion() {
-  let gitRepoVersion = require('git-repo-version');
-  return gitRepoVersion({ shaLength: 7 });
+  const gitRepoVersion = require('git-repo-version');
+  const versionWithSha = gitRepoVersion({ shaLength: 7 })
+  const shaOnly = versionWithSha.split("+")[1]
+  return shaOnly;
 }
 
 module.exports = function(environment, appConfig) {
